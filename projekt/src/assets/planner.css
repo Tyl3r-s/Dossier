@@ -1,0 +1,32 @@
+/* Banner section */
+
+.bannerSection {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-bottom: 10px;
+}
+
+.pageTitle {
+    width: 100%;
+    height: 1vh;
+}
+
+/* Time block section */
+
+/* individual blocks of text & time */
+.timeBlocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* time properties */
+.blockTime {
+    width: 10vw;
+}
+
+/* text properties */
+.blockText {
+    height: 2.5vh;
+    width: 70vw;
+}

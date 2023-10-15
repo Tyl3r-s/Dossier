@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState} from 'react';
+import LiveClockUpdate from './LiveClockUpdate';
+
+function getDate() {
+    const today = new Date();
+    const month = today.getMonth() + 1;
+    const year = today.getFullYear();
+    const date = today.getDate();
+    return `${month}/${date}/${year}`;
+  }
 
 export default function Banner() {
+
+    const [currentDate, setCurrentDate] = useState(getDate());
+
     return (
-        <div className="plannerContainer">
-            <h1 className="pageTitle">Work Day Scheduler</h1>
-            <p className="todaysDate" id="todaysDate"></p>
-            <h5 className="currentTime" id="currentTime"></h5>
+        <div className="bannerSection">
+            <h3 className="pageTitle">Projekt Dossier</h3>
+            <p className="todaysDate">{currentDate}</p>
+            <LiveClockUpdate />
         </div>
     )
 }
