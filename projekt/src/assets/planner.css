@@ -17,7 +17,9 @@
 /* individual blocks of text & time */
 .timeBlocks {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 /* time properties */
@@ -29,4 +31,10 @@
 .blockText {
     height: 2.5vh;
     width: 70vw;
+}
+
+/* checkbox */
+.checkBox {
+    text-align: right;
+    margin-left: 8vw;
 }

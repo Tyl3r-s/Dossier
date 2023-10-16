@@ -5,7 +5,7 @@ export default function Timeblock(props) {
         <form className="timeBlocks">
             <textarea className="blockText">{props.tasks}</textarea>
             <label className="blockTime">{props.time}</label>
-
+            <input type="checkbox" className="checkBox" />
         </form>
     )
 }
