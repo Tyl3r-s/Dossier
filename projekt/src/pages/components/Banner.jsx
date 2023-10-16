@@ -9,7 +9,7 @@ function getDate() {
     const month = today.getMonth();
     const year = today.getFullYear();
     const date = today.getDate();
-    return `${daylist[day]} || ${monthlist[month]} ${date} || ${year} |`;
+    return `${daylist[day]} || ${monthlist[month]} ${date} || ${year} || `;
   }
 
 export default function Banner() {
@@ -18,9 +18,8 @@ export default function Banner() {
 
     return (
         <div className="bannerSection">
-            <h3 className="pageTitle">Projekt Dossier</h3>
-            <p className="todaysDate">{currentDate}</p>
-            <LiveClockUpdate />
+            <h2 className="pageTitle">Projekt Dossier</h2>
+            <p className="todaysDate">{currentDate}<LiveClockUpdate /></p>
         </div>
     )
 }

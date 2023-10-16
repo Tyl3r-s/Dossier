@@ -9,7 +9,18 @@
 
 .pageTitle {
     width: 100%;
-    height: 1vh;
+    margin: 0;
+}
+
+.todaysDate {
+    margin: 0;
+    width: 100vw;
+    display: flex;
+}
+
+.todaysTime {
+    margin: 0;
+    width: 30vw;
 }
 
 /* Time block section */
@@ -25,6 +36,7 @@
 /* time properties */
 .blockTime {
     width: 10vw;
+    margin-left: 2px;
 }
 
 /* text properties */
@@ -36,5 +48,4 @@
 /* checkbox */
 .checkBox {
     text-align: right;
-    margin-left: 8vw;
 }

@@ -23,9 +23,9 @@ class LiveClockUpdate extends Component {
 
   render() {
     return (
-      <div>
-        <p> | {this.state.date.toLocaleTimeString()}</p>
-      </div>
+      <p className="todaysTime">
+        {this.state.date.toLocaleTimeString()}
+      </p>
     );
   }
 }
